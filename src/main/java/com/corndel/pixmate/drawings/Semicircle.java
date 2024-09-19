@@ -3,10 +3,11 @@ package com.corndel.pixmate.drawings;
 public class Semicircle {
 
     public static void main(String[] args) {
-        drawSemicircle(8);
+        drawSemicircle(15);
     }
 
     public static void drawSemicircle(int radius){
+        // works better with a larger radius!
 
         StringBuilder line = new StringBuilder();
         for (int i = radius; i > 0; i--) {

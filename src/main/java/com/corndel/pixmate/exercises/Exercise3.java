@@ -14,10 +14,12 @@ public class Exercise3 {
    */
   public static int gridLimit(int[][] grid) {
     int biggerThanTen = 0;
-    for(int i = 0; i < grid.length; i++){
-      for(int j = 0; j < grid[i].length; j++){
-        if(grid[i][j] > 10){
+    for(int[] arr : grid){
+      for(int num : arr){
+        if(num > 10){
           biggerThanTen++;
+        } else {
+          continue;
         }
       }
     }

@@ -12,15 +12,15 @@ public class Rectangle {
 
     public static void drawRectangle(int height, int width){
         // loop over rows
+        StringBuilder line = new StringBuilder();
         for(int i = 0; i < height; i++){
-            StringBuilder line = new StringBuilder();
             // loop over columns
             for(int j = 0; j < width; j++){
                 line.append(Chalk.on("* ").green());
             }
-            // print complete row
-            System.out.println(line.toString());
+            line.append("\n");
         }
+        System.out.println(line.toString());
     }
 }
 

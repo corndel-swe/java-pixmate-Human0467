@@ -16,7 +16,16 @@ public class Exercise2a {
    * @return the sum of numbers that meet the criteria
    */
   public static int sumSelective(int[] numbers) {
-    // TODO
-    return 0;
+    int sum = 0;
+    for(int num: numbers){
+      if( (num % 2 == 0) && (num > 10) ){
+        continue;
+      }else if(num % 2 == 0){
+        sum += num;
+      }else if(num > 10){
+        sum += num;
+      }
+    }
+    return sum;
   }
 }

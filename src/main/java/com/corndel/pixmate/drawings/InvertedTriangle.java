@@ -14,7 +14,7 @@ public class InvertedTriangle {
         StringBuilder line = new StringBuilder();
         // loop over rows
         for (int i = 0; i < rows; i++) {
-            // draw correct number of stairs
+            // draw correct number of stars
             for(int j = 0; j < (rows-i); j++){
                 line.append(Chalk.on("*").green());
             }

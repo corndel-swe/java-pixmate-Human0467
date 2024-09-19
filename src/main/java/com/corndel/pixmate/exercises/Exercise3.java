@@ -1,5 +1,7 @@
 package com.corndel.pixmate.exercises;
 
+import java.util.Arrays;
+
 public class Exercise3 {
   // https://tech-docs.corndel.com/java/nested-loops.html
 
@@ -11,7 +13,16 @@ public class Exercise3 {
    * @returns {int} The count of numbers larger than 10
    */
   public static int gridLimit(int[][] grid) {
-    // TODO
-    return 0;
+    int biggerThanTen = 0;
+    for(int[] arr : grid){
+      for(int num : arr){
+        if(num > 10){
+          biggerThanTen++;
+        } else {
+          continue;
+        }
+      }
+    }
+    return biggerThanTen;
   }
 }

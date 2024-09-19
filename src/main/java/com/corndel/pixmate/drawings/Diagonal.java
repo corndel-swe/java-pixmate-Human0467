@@ -6,7 +6,7 @@ public class Diagonal {
 
     public static void main(String[] args) {
 
-        drawDiagonal(5, false);
+        drawDiagonal(5, true);
     }
 
     public static void drawDiagonal(int length, boolean isUp){
@@ -18,18 +18,14 @@ public class Diagonal {
         if(isUp){
             for (int i = 0; i < length; i++) {
                 // add required number of spaces
-                for (int j = 0; j < length-i; j++) {
-                    line.append(" ");
-                }
+                line.append(" ".repeat(length-i));
                 // add the character
                 line.append(Chalk.on("*\n").green());
             }
         } else {
             for (int i = 0; i < length; i++) {
                 // add required number of spaces
-                for (int j = 0; j < i; j++) {
-                    line.append(" ");
-                }
+                line.append(" ".repeat(i));
                 // add the character
                 line.append(Chalk.on("*\n").green());
             }

@@ -6,11 +6,11 @@ public class Rectangle {
     public static void main(String[] args){
 
         // call rectangle, passing height and width
-        DrawRectangle(5, 5);
+        drawRectangle(5, 5);
 
     }
 
-    public static void DrawRectangle(int height, int width){
+    public static void drawRectangle(int height, int width){
         // loop over rows
         for(int i = 0; i < height; i++){
             StringBuilder line = new StringBuilder();

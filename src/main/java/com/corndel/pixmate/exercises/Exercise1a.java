@@ -17,8 +17,15 @@ public class Exercise1a {
    */
   public static int addEven(int n) {
     int sum = 0;
-    for(int i = 2; i <= n; i += 2){
+//    for(int i = 2; i <= n; i += 2){
+//      sum += i;
+//    }
+
+    // refactored to use while loop
+    int i = 2;
+    while(i <= n){
       sum += i;
+      i += 2;
     }
     return sum;
   }

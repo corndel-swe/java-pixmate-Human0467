@@ -16,12 +16,14 @@ public class Exercise1a {
    * @return the sum of the even numbers smaller than or equal to n
    */
   public static int addEven(int n) {
-    int sum = 0;
+    // Using a for loop
+//    int sum = 0;
 //    for(int i = 2; i <= n; i += 2){
 //      sum += i;
 //    }
 
-    // refactored to use while loop
+    // using a while loop
+    int sum = 0;
     int i = 2;
     while(i <= n){
       sum += i;

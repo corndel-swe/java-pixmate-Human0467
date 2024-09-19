@@ -18,6 +18,7 @@ public class Exercise2a {
   public static int sumSelective(int[] numbers) {
     int sum = 0;
     for(int num: numbers){
+      // use XOR check if even OR bigger than 10, but not both
       if( (num % 2 == 0) ^ (num > 10) ){
         sum += num;
       }

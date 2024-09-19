@@ -8,10 +8,10 @@ public class TriangleSandwich {
 
     public static void main(String[] args) {
 
-        triangleSandwich(7);
+        drawTriangleSandwich(7);
     }
 
-    public static void triangleSandwich(int rows) {
+    public static void drawTriangleSandwich(int rows) {
 
         // rows must be odd in order to draw symmetric sandwich
         if(rows%2 == 0){

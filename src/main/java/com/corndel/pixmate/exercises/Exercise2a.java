@@ -18,11 +18,7 @@ public class Exercise2a {
   public static int sumSelective(int[] numbers) {
     int sum = 0;
     for(int num: numbers){
-      if( (num % 2 == 0) && (num > 10) ){
-        continue;
-      }else if(num % 2 == 0){
-        sum += num;
-      }else if(num > 10){
+      if( (num % 2 == 0) ^ (num > 10) ){
         sum += num;
       }
     }
